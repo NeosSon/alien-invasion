@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}", // Runs the currently open file
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Specific File",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/alien_invasion.py", // Specify the file path
+      "console": "integratedTerminal"
+    }
+  ]
+}
