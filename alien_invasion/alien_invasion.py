@@ -166,7 +166,6 @@ class AlienInvasion:
         self.aliens.update()
         # Look for alien-ship collisions
         if pygame.sprite.spritecollideany(self.ship, self.aliens):
-            print("Ship hit!!!")
             self._ship_hit()
         self._check_aliens_bottom()
 
@@ -182,7 +181,7 @@ class AlienInvasion:
             for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points * len(aliens)//5
                 self.sb.prep_score()
-                print(len(aliens))
+                
 
     def _ship_hit(self):
         if self.stats.ships_left > 0:
