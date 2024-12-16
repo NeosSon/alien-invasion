@@ -225,7 +225,7 @@ class AlienInvasion:
                 break
     
     def _write_high_score(self):
-        with open('alien-invasion/alien_invasion/high-score.txt', 'w') as file:
+        with open('alien_invasion\high-score.txt', 'w') as file:
             file.write(str(self.stats.high_score))
 
     def _update_screen(self):

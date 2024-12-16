@@ -12,7 +12,7 @@ class GameStats:
         self.game_active = False
 
         # High score should never be reset.
-        with open('alien-invasion/alien_invasion/high-score.txt') as file:
+        with open('alien_invasion\high-score.txt') as file:
             lines = file.readlines()
             if len(lines) == 0:
                 self.high_score = 0
